@@ -20,6 +20,9 @@ header {
     margin: 0;
 }
 
+.headeraH1 nav {
+    position: sticky; top: 0;
+}
 .banner {
     width: 100%;
     overflow: hidden;
