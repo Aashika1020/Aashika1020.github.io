@@ -92,6 +92,9 @@ main {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+.services img2{
+    float: right; 
+}
 
 main h3 {
     margin-top: 20px;
@@ -166,7 +169,7 @@ main h3 {
     border-radius: 5px;
     border-color: #333;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 25px; 
     margin-top: 15px;
     transition: background-color 0.3s;
     border:1px solid rgb(253, 253, 255);
