@@ -22,7 +22,7 @@ header {
 }
 
 .headeraH1 nav {
-    position: fixed; top: 0;
+    position: sticky; top: 0;
 }
 .banner {
     width: 100%;
