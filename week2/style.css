@@ -145,10 +145,12 @@ main h3 {
     padding: 20px;
     background-color: #abb7f7;
     margin-top: 30px;
-    text-transform: uppercase;
+    border-color: black;
+    border-radius:1px;
 }
-.cta-container.h2 {
+.cta-container h2 {
     text-transform: uppercase;
+    text-decoration: underline;
 }
 
 .cta-button {
@@ -156,11 +158,11 @@ main h3 {
     padding: 10px 20px;
     background-color: #3e2c4c;
     color: #ffffff;
-    text-decoration: wavy;
+    text-decoration: dotted;
     border-radius: 5px;
     border-color: #333;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 15px;
     transition: background-color 0.3s;
 }
