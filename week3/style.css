@@ -219,9 +219,20 @@ footer p {
     width: 100%;
 }
 /* Position the image container (needed to position the left and right
-arrows) */
+arrows) */    
 .gallery-container {
     position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.gallery-container img {
+    width: 24%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 /* Hide the images by default */
 .mySlides {
@@ -274,4 +285,6 @@ arrows) */
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
+
+
 
