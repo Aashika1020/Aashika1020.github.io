@@ -220,7 +220,7 @@ footer p {
 }
 /* Position the image container (needed to position the left and right
 arrows) */
-.container {
+.gallery-container {
     position: relative;
 }
 /* Hide the images by default */
