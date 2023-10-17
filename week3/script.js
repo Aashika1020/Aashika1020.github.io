@@ -41,3 +41,33 @@ function DisplaySlide(n) {
 }
 
 DisplaySlide(current); /* Display the initial image*/
+
+/* REPORT
+"The challenge was ensuring that the images are changed in the correct order and 
+that the JavaScript functions worked properly. To overcome this challenge, I 
+made sure the JavaScript conditions for the functions were logically correct. 
+I approached this by creating two functions: one named 'movePrev' and the other
+named 'moveNext.'
+
+In the 'movePrev' function, which is called when the 'Prev' button is 
+clicked, the 'current' variable, responsible for tracking the current image,
+is decreased or decremented to display the previous image.
+In the 'moveNext' function, called when the 'Next' button is clicked, 
+increases the 'current' count, causing the next image to be displayed.
+
+In cases where the 1st image is displayed and the user clicks 'Prev,' it goes
+to the 8th image and displays that. Similarly, if the user clicks 'Next' while
+on the 8th image, it returns to the 1st image. This is achieved 
+through the 'if' and 'else if' conditions.
+
+The 'DisplaySlide()' function stores all the images with the class name 
+'mySlides' in the 'slides' variable. The 'for loop' then iterates through all 
+the elements with the 'mySlides' class, setting their display style property 
+to 'none' to hide the slides. Finally, the last line of the function displays 
+the slide according to the 'current' variable by changing the display style 
+property to "block".
+
+In essence, I hide the slides using 'DisplaySlide()', and in the last line, 
+I display the slide based on the value of the 'current' variable.
+
+*/
