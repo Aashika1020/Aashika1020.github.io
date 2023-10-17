@@ -6,6 +6,7 @@
   <title>Gallery - Wanderlust Voyages</title>
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="javascript.js"></script>
 </head>
 
 <body>
@@ -28,43 +29,45 @@
       <h1>Gallery</h1>
 
       <div class="gallery-container">
-        <div class="slideshow-img">
-          <div class="mySlides">
+        <div class="slideshow-img"> 
+          <div class="mySlides" id="firstImage">
             <div class="numbertext">1/8 </div>
-            <img src="images/1.jpeg">
+            <img src="images/1.jpg">
 
           </div>
           <div class="mySlides">
             <div class="numbertext"> 2/8 </div>
-            <img src="images/2.jpeg">
+            <img src="images/2.jpg">
           </div>
           <div class="mySlides">
             <div class="numbertext"> 3/8 </div>
-            <img src="images/3.jpeg">
+            <img src="images/3.jpg">
           </div>
           <div class="mySlides">
             <div class="numbertext"> 4/8 </div>
-            <img src="images/4.jpeg">
+            <img src="images/4.jpg">
           </div>
           <div class="mySlides">
             <div class="numbertext"> 5/8 </div>
-            <img src="images/5.jpeg">
+            <img src="images/5.jpg">
           </div>
           <div class="mySlides">
             <div class="numbertext"> 6/8 </div>
-            <img src="images/6.jpeg">
+            <img src="images/6.jpg">
           </div>
           <div class="mySlides">
             <div class="numbertext"> 7/8 </div>
-            <img src="images/7.jpeg">
+            <img src="images/7.jpg">
           </div>
           <div class="mySlides">
             <div class="numbertext">8/8 </div>
-            <img src="images/8.jpeg">
+            <img src="images/8.jpg">
           </div>
-          <a class="prev" type="button">Prev </a>
-          <a class="next" type="button">Next </a>
-        </div>
+          <a class="prev" href="#" type="button" onclick="movePrev(1)">Prev</a>
+          <a class="next" href="#" type="button" onclick="moveNext(1)">Next</a>
+          <!--<a class="prev" type="button">Prev </a>
+          <a class="next" type="button">Next </a>-->
+        </div> 
       </div>
       <!-- Call to Action -->
       <section class="cta-container">
