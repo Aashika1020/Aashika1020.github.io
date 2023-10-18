@@ -105,8 +105,8 @@ function validatePassword(){
         passErr.style.color = "#8b0000";
     }
     else if(password.length >= 8){
-        passErr.innerHTML=" ";
-        passErr.style.color = "#00ff00";
+        passErr.innerHTML="Password is Correct";
+        passErr.style.color = "#006400";
     }
 
 }
