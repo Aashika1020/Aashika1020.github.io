@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery - Wanderlust Voyages</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/d7e927c687.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1 class="headeraH1">Wanderlust Voyages | Travel Agency</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="tasks.html">Tasks</a></li>
+                <li><a href="form.html">Login</a></li>
+            </ul>
+        </nav>
+        <main class="services">
+            <div class="login-container">
+                <div class="form-box">
+                    <form id="form" action="form.html" onsubmit="return validateForm()">
+                        <h1> Login </h1>
+                        <div class="input-control">
+                            <div class="input-field" id="nameField" >
+                                <i class="fa-solid fa-user"></i>
+                                <input id="username" type="text" placeholder="Username" onkeyup="validateUsername()" >
+                                <span id="user-err"></span>
+                            </div>
+                            <div class="input-field">
+                                <i class="fa-solid fa-envelope"></i>
+                                <input id="email" type="email" placeholder="Email"  onkeyup="validateEmail()" >
+                                <span id="email-err"></span>
+                            </div>
+                            <div class="input-field">
+                                <i class="fa-solid fa-lock"></i>
+                                <input id="password" type="password" placeholder="Password" onkeyup="validatePassword()" >
+                                <span id="pass-err"></span>
+                            </div>
+                            <div class="input-field">
+                                <i class="fa-solid fa-eye"></i>
+                                <input id="confirmPass" type="password" placeholder="Confirm Password" onkeyup="validateConfirmPassword()" >
+                                <span id="conPass-err"></span>
+                                
+                            </div>
+                            <div class="button-box">
+                                <button type="submit" id="loginBtn" >Sign In</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+        </main>
+
+        <!-- Footer Section -->
+    <footer>
+        <ul>
+          <li><a href="https://www.facebook.com/">Facebook</a></li>
+          <li><a href="https://twitter.com/">Twitter</a></li>
+          <li><a href="https://www.instagram.com/">Instagram</a></li>
+        </ul>
+        <p>&copy; 2024 Wanderlust Voyages | Travel Agency. All rights reserved.</p>
+      </footer>
+    </div>
+</body>
+</html>
