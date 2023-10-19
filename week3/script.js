@@ -8,7 +8,7 @@ function movePrev(n){ //1
     current = current- n; // 1-(1) =0 , current=0
     if (current<1) { //0<=8
         current=1;
-        DisplaySlide(current);
+        DisplaySlide(current); //takes care of the edge case
       } 
     else if(current <= images.length){
         DisplaySlide(current);
@@ -23,20 +23,20 @@ function moveNext(n){ //1
     }
     else if(current>=images.length){ //if current=9
         current=8;
-        DisplaySlide(current);
+        DisplaySlide(current); //takes care of the edge case
     }
     
 }
 
 function DisplaySlide(n) {
-   // let i;
+   
     let slides = document.querySelectorAll(".mySlides");
 
     for (var i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+        slides[i].style.display = "none"; 
     }
 
-    slides[current - 1].style.display = "block";
+    slides[current - 1].style.display = "block"; //displays the correct image
     
 }
 
@@ -48,15 +48,15 @@ DisplaySlide(current); /* Display the initial image*/
 function validateUsername(){
     var username= document.getElementById("username").value;
     var userErr= document.getElementById("user-err");
-    if(username == ""){
+    if(username == ""){ //if username is empty
         userErr.innerHTML = "Username Cannot Be Empty";
         userErr.style.color = "#8b0000";
     }
-    else if (username.trim() === ""){
+    else if (username.trim() === ""){ //if username has spaces
         userErr.innerHTML = "Username Cannot have spaces";
         userErr.style.color = "#8b0000";
     }
-    else if(!username == ""){
+    else if(!username == ""){//if username is of the correct form
         userErr.innerHTML = "Username Correct ";
         userErr.style.color = "#006400";
     }
@@ -70,23 +70,17 @@ function validateEmail()
     var text= document.getElementById("email-err");
     var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
     
-    if(!email.match(pattern)){
-        form.classList.remove("valid");
-        form.classList.remove("invalid");
+    if(!email.match(pattern)){ //if email doesnt match the correct form
         text.innerHTML = "Please Enter Valid Email Address";
         text.style.color = "#8b0000";
         emailBor.style.bordercolor = "#006400";
     }
-    else{
-        form.classList.add("valid");
-        form.classList.remove("invalid");
+    else{//if email matches the correct form
         text.innerHTML = "Your Email Address is Valid";
         text.style.color = "#006400";
        
     }
-    if(email == ""){
-        form.classList.remove("valid");
-        form.classList.remove("invalid");
+    if(email == ""){//if username is empty
         text.innerHTML = " ";
         text.style.color = "#00ff00";
     }    
@@ -96,15 +90,15 @@ function validatePassword(){
     var password= document.getElementById("password").value;
     var passErr= document.getElementById("pass-err");
 
-    if(password == ""){
+    if(password == ""){//if password is empty
         passErr.innerHTML=" Password Cannot Be Empty";
         passErr.style.color = "#8b0000";
     }
-    else if(password.length < 8){
+    else if(password.length < 8){//if password is of less characters
         passErr.innerHTML=" Password cannot be less than 8 characters";
         passErr.style.color = "#8b0000";
     }
-    else if(password.length >= 8){
+    else if(password.length >= 8){//if password is of the correct form
         passErr.innerHTML="Password is Correct";
         passErr.style.color = "#006400";
     }
@@ -116,15 +110,15 @@ function validateConfirmPassword(){
     var confirmPass= document.getElementById("confirmPass").value;
     var conPassErr= document.getElementById("conPass-err");
 
-    if(password === confirmPass){
+    if(password === confirmPass){//if the confirm password field matches the password
         conPassErr.innerHTML = "Password matched!";
         conPassErr.style.color = "#006400";
     }
-    if(confirmPass == ""){
+    if(confirmPass == ""){//if confirm password field is left empty
         conPassErr.innerHTML=" Password Cannot Be Empty";
         conPassErr.style.color = "#8b0000";
     }
-    else if(password != confirmPass){
+    else if(password != confirmPass){// if password is not matched 
         conPassErr.innerHTML = "Password are not matched";
         conPassErr.style.color = "#8b0000";
     }
