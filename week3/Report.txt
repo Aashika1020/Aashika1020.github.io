@@ -1,4 +1,4 @@
-REPORT
+REPORT FOR SLIDESHOW
 "The challenge was ensuring that the images are changed in the correct order and 
 that the JavaScript functions worked properly. To overcome this challenge, I 
 made sure the JavaScript conditions for the functions were logically correct. 
@@ -25,4 +25,24 @@ property to "block".
 
 In essence, I hide the slides using 'DisplaySlide()', and in the last line, 
 I display the slide based on the value of the 'current' variable.
+
+-------------------
+REPORT FOR LOGIN
+For the login page, I initially created four input fields: one for the username,
+another for the email, one for the password, and one to confirm the password.
+I assigned relevant id's to each of these fields and ensured that they were 
+paired with corresponding <span> elements, so that their respective error messages will
+be displayed. I also assigned the error messages text to be in red color and 
+if the input is correct, success messages text to be in green so the user has visuall
+
+Next, I applied the provided CSS and made adjustments to the login page's
+design. Moving on to JavaScript, I developed four functions: validateUsername(),
+validateEmail(), validatePassword(), and validateConfirmPassword(). Each of
+these functions is responsible for ensuring that the data entered into their
+respective fields adheres to the correct format.
+
+Finally, when the user clicks the login button, the validateForm() function
+is called. It validates that all four fields have been correctly filled
+in before allowing the form to be submitted.
+
 
