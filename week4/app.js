@@ -30,12 +30,10 @@ weatherBtn.addEventListener('click', function () {
             const weatherCard = document.createElement('div');
             weatherCard.className = 'weather-card';
 
-            const weatherHTML = `
-                <h2>Weather in ${cityName}:</h2>
-                <p>Description: ${weatherDesc}</p>
-                <p>Temperature: ${temp}°C</p>
-                <p>Wind Speed: ${windSpeed} m/s</p>
-            `;
+            const weatherHTML = `  
+                <p>The weather in ${cityName} is ${weatherDesc}.</p>   
+                <p>The temperature is ${temp}°C with a wind speed of ${windSpeed} m/s</p>
+                 <hr style=" background-color:black; height: 1px; width:50%; text-align:center; ">`;//creates a line after each input
 
             weatherCard.innerHTML = weatherHTML;
             weatherContainerDiv.insertBefore(weatherCard, weatherContainerDiv.firstChild); //Inserts this above the existing content
